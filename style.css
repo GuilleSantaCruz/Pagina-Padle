@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+:root{
+    --primario:#8B48BF;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    height: 44px;
+    width: 134px;
+    background-color: #8B48BF;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.7s;
+    background-color: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover{
+    background-color: #5b4070;
+    scale: 1.1;
+}
+
+/*HEADER*/
+
+header{
+    width: 100%;
+    height: 165px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: rgba(255, 255, 255, 0.50);
+}
+
+header div{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 65px;
+    align-items: center;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 28px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header ul li{
+    transition: all 0.5s;
+}
+
+header ul li:hover{
+    opacity: 60%;
+    scale: 1.1;
+}
+
+a{
+    color: #242E52;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #242E52;
+    text-decoration: none;
+}
+
+header button{
+    transition: 0.7s ease all;
+    overflow: hidden;
+}
+
+button span{
+    z-index: 2;
+    position: relative;
+    transition: 0.7s ease all;
+}
+
+header button::after{
+    content: "";
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: calc(-100% - 44px);
+    border-bottom: 44px solid #242E52;
+    border-right: 44px solid transparent;
+    transition: 0.7s ease-in-out all;
+}
+
+header button:hover::after{
+    left:0;
+}
+
+
+/*Container 1*/
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container-uno{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.container-uno img{
+    height: 461.07px;
+}
+
+.container-uno div{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: end;
+    align-items: end;
+}
+
+.container-uno h2{
+    font-size: 50px;
+    color: #232C50;
+}
+
+.container-uno p {
+    font-size: 16.56px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.container-uno button:hover{
+    background-color: #3CDDF3;
+}
+
+
+/*Container 2*/
+
+.container-dos{
+    background-color: #8B48BF;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.container-dos h2{
+    font-size: 36px;
+    width: 450px;
+    height: 88px;
+    margin-right: 100px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.container-dos p{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 450px;
+    height: 88px;
+}
+
+/*Container 3*/
+
+.container-tres span{
+    display: none;
+}
+
+.container-tres{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    margin-top: 40px;
+}
+
+.carta{
+    min-height: 158px;
+    margin-right: 15px;
+    width: 35%;
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
+.carta div{
+    padding-left: 90px;
+    color: #B3B2B7;
+}
+
+.carta div p:first-child{
+    margin-bottom: 18px;
+    margin-top: 5px;
+    color: #323851;
+}
+
+.container-tres h4{
+    background-color: #8B48BF;
+    width: 69px;
+    height: 43px;
+    border-radius: 30px;
+    position: absolute;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Container 4*/
+
+.container-cuatro{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 200px;
+}
+
+.container-cuatro h2{
+    padding-bottom: 80px;
+    font-size: 39.21px;
+    color: rgba(36, 46, 83, 1);
+    text-align: center;
+}
+
+.box-jugadores{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+}
+
+.carta-jugador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 27%;
+    text-align: center;
+    color: #B9B9C1;
+    line-height: 25.06px;
+    border-radius: 10px;
+    transition: 0.5s;
+    padding: 10px;
+}
+
+.carta-jugador:hover{
+    background-color: #e0ceef;
+}
+
+.box-jugadores img{
+    width: 70px;
+    height: 70px;
+    margin-bottom: 21px;
+}
+
+.box-jugadores h4{
+    margin-bottom: 21px;
+    color: #3F4868;
+}
+
+.container-cuatro button span{
+    z-index: 2;
+    position: relative;
+    transition: 0.5s ease all;
+}
+
+.container-cuatro button::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #8B48BF;
+    position: absolute;
+    z-index: 1;
+    top: -44px;
+    left: 0;
+    transition: 0.5s ease-in-out all;
+}
+
+.container-cuatro button:hover::before{
+    top:0;
+}
+
+/*Article*/
+
+article{
+    width: 100%;
+    background-image: url(imagenes/historia-del-padel-portada.jpg);
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 47px 0;
+}
+
+article h3{
+    font-size: 40px;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    color: #242E52;
+}
+
+article button{
+    background-color: #ff0d0d;
+    color: white;
+}
+
+/*Footer*/
+
+footer{
+    width: 100%;
+    height: 247px;
+    background-color: #1E1E26;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-redes{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.logo-footer{
+    width: 107.68px;
+    height: 25px;
+}
+
+.logo-redes div img{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.redes-footer img{
+    transition: 0.5s all;
+}
+
+.redes-footer img:hover{
+    scale: 1.3;
+}
+
+.navegacion{
+    display: flex;
+    height: 70%;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 400;
+}
+
+
+footer ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    
+}
+
+header ul li{
+    transition: all 0.5s;
+}
+
+
+footer ul li{
+    cursor: pointer;
+    margin-bottom: 12px;
+    font-size: 16px;
+    transition: 0.5s all;
+}
+
+footer ul li:hover{
+    scale: 1.1;
+    color: yellow;
+}
+
+
+.form-copy{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form-copy form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-copy input{
+    width: 72%;
+    height: 100%;
+    border-radius: 50px;
+    padding-left: 10px;
+    border: none;
+    margin-right: 10px;
+    outline: none;
+}
+
+.form-copy input::placeholder{
+    color: #A0A0A0;
+}
+
+input:focus{
+    border: none;
+}
+
+input:active{
+    border: none;
+}
+
+.form-copy button{
+    width: 63px;
+    height: 42px;
+    background-color: #2a4bc1;
+}
+
+.form-copy p{
+    font-size: 12.5px;
+    margin-left: 53px;
+    color: #8C8C94;
+}
+
+
+@media (max-width:480px){
+    header img{
+        margin-left: 20px;
+    }
+
+    header ul li{
+        display: none;
+    }
+
+    header nav::after {
+        content: "\f0c9";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 2rem;
+        margin-right: 20px;
+      }
+
+    header button{
+        display: none;
+    }
+
+    header div{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    main{
+        align-items: center;
+    }
+    /*Conteiner 1*/
+
+    .container-uno{
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-uno img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .container-uno div{
+        width: 100%;
+        margin-top: 100px;
+    }
+    
+    /*Conteiner 2*/
+    
+    .container-dos{
+        background-color: rgba(60, 221, 243, 1);
+        width: 100%;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .container-dos h2{
+        margin-right: 0;
+        width: 90%;
+        margin-bottom: 80px;
+    }
+    .container-dos p{
+        display: none;
+    }
+
+    .container-dos::after{
+        content: "Manage provides all the functionality your teas needs, without the complexity. Our software is tailor-made for modern digital product teams";
+        width: 90%;
+        padding-bottom: 40px;
+        text-align: start;
+        line-height: 1.5;
+    }
+    /*Conteiner 3*/
+    .container-tres h4{
+        display: none;
+    }
+
+    .container-tres{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+    }
+    
+    .carta{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .carta div{
+        padding-left: 0;
+        margin-left: 50px;
+        text-align: start;
+    }
+
+    .container-tres span{
+        background-color: #8B48BF;
+        width: 69px;
+        height: 43px;
+        border-radius: 30px;
+        color: white;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    .container-tres p:first-child{
+        background-color: #dcc8ec;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+
+    /*Container 4*/
+
+    .carta-jugador:not(.carta-not){
+        display: none;
+    }
+
+    .carta-jugador{
+        width: 85%;
+    }
+
+    /*ARTICLE*/
+
+    article{
+        flex-direction: column;
+        background-color: #3CDDF3;
+    }
+
+    article h3{
+        width: 60%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    article button{
+        background-color: #232C50;
+        color: white;
+    }
+
+    /*FOOTER*/
+
+    footer{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 534.71px;
+    }
+
+    .form-copy{
+        width: 100%;
+        align-items: center;
+        height: 50%;
+    }
+
+    .form-copy form{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .form-copy p{
+        display: none;
+    }
+
+    .form-copy input{
+        width: 72%;
+        padding: 15px 0;
+        padding-left: 10px;
+        border: none;
+        height: 48.52px;
+    }
+
+    footer ul{
+        justify-content: space-evenly;
+    }
+
+    .logo-redes{
+        width: 100%;
+        height: 85%;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .navegacion{
+    width: 92%;
+    height: 38%;
+    }
+
+    .redes-footer{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    footer::before{
+        content: "Copyright 2020. All Rights Reserved";
+        height: 30%;
+        color: #8C8C94;
+        font-size: 12.5px;
+    }
+}
